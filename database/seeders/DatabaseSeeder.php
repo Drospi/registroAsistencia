@@ -12,6 +12,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $docente = new DocenteSeeder;
+        $curso = new CursoSeeder;
+        $alumnos = new AlumnosSeeder;
+
+        $docente->run();
+        // $curso->run();
+        // $alumnos->run();
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
